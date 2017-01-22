@@ -1,4 +1,4 @@
-# Created by: Anwyl Gabuteroq
+# Created by: Mr. Coxall
 # Created on: Dec 2016
 # Created for: ICS3U
 # This program is the first file in a multi-scene game template
