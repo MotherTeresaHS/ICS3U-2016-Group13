@@ -20,22 +20,22 @@ class HelpScene(Scene):
                                      color = '#80ffcd', 
                                      parent = self, 
                                      size = self.size)
-    
+    	# add back button
         back_button_position = Vector2(self.size_of_screen_x * 0.07, self.size_of_screen_y * 0.90)
         self.back_button = SpriteNode('assets/sprites/back_button.PNG',
         							   parent = self,
         							   position = back_button_position,
         							   scale = 0.20)
-       
+       	# add the title
         help_title_position = Vector2(self.size_of_screen_x * 0.50, self.size_of_screen_y * 0.90)
         self.help_title = LabelNode(text = 'Welcome to Munchie Monster!',
                                       font=('Avenir', 45),
                                       parent = self,
                                       position = help_title_position,
                                       scale = 1)
-                                      
+        # add the lL                        
         help_position = Vector2(self.size_of_screen_x * 0.50, self.size_of_screen_y * 0.65)
-        self.credits = LabelNode(text = 'Your objective of the game is to get every\nfruit possible that is on the screen',
+        self.credits = LabelNode(text = 'Your objective of the game is to get every\ncookie possible that is on the screen',
                                  font = ('Avenir', 20),
                                  parent = self,
                                  position = help_position,
