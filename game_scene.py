@@ -23,7 +23,7 @@ class GameScene(Scene):
         self.right_button_down = False
         self.face_move_speed = 30.0
         self.cookies = [] 
-        self.cookie_fall_rate = 8
+        self.cookie_fall_rate = 10
         self.score = 0
         self.game_over = False
         
@@ -72,16 +72,16 @@ class GameScene(Scene):
         if self.left_button_down == True:
             faceMove = Action.move_by(-1 * self.face_move_speed, 
                                            0.0, 
-                                           0.4)
+                                           0.2)
             self.face.run_action(faceMove)
         
         if self.right_button_down == True:
             faceMove = Action.move_by(self.face_move_speed, 
                                            0.0, 
-                                           0.4)
+                                           0.2)
             self.face.run_action(faceMove)
           
-        cookies_create_chance = random.randint(1,20)
+        cookies_create_chance = random.randint(1,60)
         if cookies_create_chance == 7 and self.game_over == False:
             self.add_cookie()
             
@@ -98,7 +98,7 @@ class GameScene(Scene):
                 self.cookies.remove(cookie)
                 self.game_over = True
         
-        self.score_label.text = 'Score:' + str(self.score)
+        self.score_label.text = 'Score: ' + str(self.score)
       
         #self.game_over = True
     
