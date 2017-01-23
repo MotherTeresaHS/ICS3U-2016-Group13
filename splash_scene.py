@@ -23,7 +23,11 @@ class SplashScene(Scene):
                                      color = (0.61, 0.78, 0.87), 
                                      parent = self, 
                                      size = self.size)
+<<<<<<< HEAD
         self.school_crest = SpriteNode('./assets/sprites/Mt_Crest_splash.jpg',
+=======
+        self.school_crest = SpriteNode('./assets/sprites/MT_Crest.JPG',
+>>>>>>> 102905a31641c1ab9284da512fc24b803ee82a66
                                        parent = self,
                                        position = self.size/2,
                                        size = self.size)
